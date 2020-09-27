@@ -1,6 +1,6 @@
-# trial-
+# Lab5
 
-Trial- repository consists of three text files and two images to accomplish Lab 5.
+Lab5 repository consists of three text files and two images to accomplish the three tasks of Lab 5.
 
 * Lab5Log.txt has Linux commands to download a CSV file, look at the first couple of lines of the CSV file, get the number of total lines in the file, extract the second, seventh, and eighth columns, and sort the second column alphabetically.
 * Lab5ShellScript.sh has the Linux commands of Lab5Log.txt in a shell script. 
