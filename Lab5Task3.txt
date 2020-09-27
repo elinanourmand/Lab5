@@ -1,0 +1,60 @@
+Last login: Sat Sep 26 19:37:59 on ttys002
+MacBook-Air:~ elinanourmand$ ssh enourman@146.245.252.28     
+Access to Brooklyn College computers is restricted to authorized users
+        and approved educational and research purposes, only.
+enourman@146.245.252.28's password: 
+Last login: Sat Sep 26 19:37:33 2020 from ool-4351ab8d.dyn.optonline.net
+[enourman@sol28 ~]$ wget https://www.electrictoolbox.com/images/icons/linux-bsd.gif
+--2020-09-26 20:28:30--  https://www.electrictoolbox.com/images/icons/linux-bsd.gif
+Resolving www.electrictoolbox.com (www.electrictoolbox.com)... 52.86.133.10, 18.232.245.187, 35.175.60.16, ...
+Connecting to www.electrictoolbox.com (www.electrictoolbox.com)|52.86.133.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 805 [image/gif]
+Saving to: ‘linux-bsd.gif’
+
+100%[======================================>] 805         --.-K/s   in 0s      
+
+2020-09-26 20:28:35 (14.9 MB/s) - ‘linux-bsd.gif’ saved [805/805]
+[enourman@sol28 ~]$ cp linux-bsd.gif /users1/st/enourman/trial-
+[enourman@sol28 ~]$ cd trial-
+[enourman@sol28 trial-]$ git add linux-bsd.gif
+[enourman@sol28 trial-]$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   linux-bsd.gif
+#
+[enourman@sol28 trial-]$ git commit -m "before"
+[master 4c165d0] before
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 linux-bsd.gif
+[enourman@sol28 trial-]$ git push -u origin master
+Username for 'https://github.com': elinanourmand
+Password for 'https://elinanourmand@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.13 KiB | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/elinanourmand/trial-.git
+   7031797..4c165d0  master -> master
+Branch master set up to track remote branch master from origin.
+[enourman@sol28 trial-]$ convert -negate linux-bsd.gif linux-bsdnegate.gif
+[enourman@sol28 trial-]$ git add linux-bsdnegate.gif
+[enourman@sol28 trial-]$ git commit -m "after"
+[master f60960a] after
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 linux-bsdnegate.gif
+[enourman@sol28 trial-]$ git push -u origin master
+Username for 'https://github.com': elinanourmand
+Password for 'https://elinanourmand@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.04 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/elinanourmand/trial-.git
+   e93eef1..f60960a  master -> master
+Branch master set up to track remote branch master from origin.
